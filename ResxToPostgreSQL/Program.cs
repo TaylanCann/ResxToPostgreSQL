@@ -11,7 +11,6 @@ public class Program
         // PostgreSQL bağlantı dizesini alın
         string connectionString = ConfigurationManager.ConnectionStrings["RootEFConnection"].ConnectionString;
 
-
         // Veritabanı bağlantısı
         using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
         {
