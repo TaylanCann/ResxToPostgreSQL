@@ -17,7 +17,7 @@ public class Program
             connection.Open();
 
             // Verileri ekleme
-            string sql = "INSERT INTO \"NEMS_COMMON\".\"COMMON_RESOURCES\" (\"KEY\", \"VALUE\" , \"LANGUAGE_KEY\", \"TENANT_ID\" ) VALUES (@key, @value , 1 , 1)";
+            string sql = "INSERT INTO \"NEMS_COMMON\".\"COMMON_RESOURCES\" (\"KEY\", \"VALUE\" , \"LANGUAGE_KEY_ID\", \"TENANT_ID\" ) VALUES (@key, @value , 1 , 1)";
 
             using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
             {
@@ -49,7 +49,7 @@ public class Program
             connection.Open();
 
             // Verileri ekleme
-            string sql = "INSERT INTO \"NEMS_COMMON\".\"COMMON_RESOURCES\" (\"KEY\", \"VALUE\" , \"LANGUAGE_KEY\", \"TENANT_ID\" ) VALUES (@key, @value , 2 , 1)";
+            string sql = "INSERT INTO \"NEMS_COMMON\".\"COMMON_RESOURCES\" (\"KEY\", \"VALUE\" , \"LANGUAGE_KEY_ID\", \"TENANT_ID\" ) VALUES (@key, @value , 2 , 1)";
 
             using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
             {
